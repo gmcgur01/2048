@@ -7,6 +7,8 @@ class Cell:
         self.merged = False
 
     def __str__(self):
+        if self.value == 0: 
+            return " "
         return str(self.value)
 
     def __eq__(left, right):
